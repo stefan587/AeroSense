@@ -148,3 +148,40 @@ footer {
     padding: 1rem;
     margin-top: auto;
 }
+
+@media (max-width: 900px) {
+    .dashboard {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .dashboard .card {
+        min-width: 180px;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .dashboard {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        justify-items: center;
+    }
+
+    .dashboard .card {
+        min-width: unset;
+        width: 100%;
+        max-width: 140px;
+        margin-bottom: 0;
+    }
+
+    .ring-container {
+        width: 90px;
+        height: 90px;
+    }
+
+    .reading {
+        font-size: 1.4rem;
+    }
+}
