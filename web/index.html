@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AeroSense - Air Quality Monitoring</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>AeroSense</h1>
+        <p>Real-time Air Quality Monitoring System</p>
+    </header>
+    
+    <div class="container">
+        <div class="dashboard">
+            <div class="card">
+                <h2>Air Quality</h2>
+                <div class="ring-container">
+                    <div class="outer-ring" id="air-quality-ring"></div>
+                    <div class="inner-ring">
+                        <div class="reading" id="air-quality">0</div>
+                        <div class="unit">PPM</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h2>Temperature</h2>
+                <div class="ring-container">
+                    <div class="outer-ring" id="temperature-ring"></div>
+                    <div class="inner-ring">
+                        <div class="reading" id="temperature">0</div>
+                        <div class="unit">°C</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h2>Humidity</h2>
+                <div class="ring-container">
+                    <div class="outer-ring" id="humidity-ring"></div>
+                    <div class="inner-ring">
+                        <div class="reading" id="humidity">0</div>
+                        <div class="unit">%</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h2>CO₂ Level</h2>
+                <div class="ring-container">
+                    <div class="outer-ring" id="co2-ring"></div>
+                    <div class="inner-ring">
+                        <div class="reading" id="co2">0</div>
+                        <div class="unit">PPM</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="about-card">
+            <h2>About AeroSense</h2>
+            <p>AeroSense is an air quality monitoring system that uses MQ135 gas sensors and DHT11 temperature/humidity sensors to provide real-time environmental data. The system helps you monitor indoor air quality, alerting you to potentially harmful conditions while tracking temperature and humidity levels.</p>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 AeroSense Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
